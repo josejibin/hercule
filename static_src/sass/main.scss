@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+
+// 1. Vendors
+
+// 2. Base stuff
+@import
+  'base/base',
+  'base/typography',
+
+// 3. Layout-related sections
+
+// 4. Components
+@import
+  'components/button';
+
+// 5. Page-specific styles
+
