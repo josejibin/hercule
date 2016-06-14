@@ -1,0 +1,25 @@
+{
+  "name": "hercule",
+  "version": "1.0.0",
+  "description": "hercule theme for hugo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josejibin/hercule.git"
+  },
+  "keywords": [
+    "herucle",
+    "theme",
+    "hugo",
+    "golang"
+  ],
+  "author": "jibin jose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josejibin/hercule/issues"
+  },
+  "homepage": "https://github.com/josejibin/hercule#readme"
+}
