@@ -1,27 +1,4 @@
 
-
-/* =============================================================================
-  BUTTON RESETS
-============================================================================= */
-button {
-  color: $brand-color;
-  margin: 0;
-  padding: 0;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  background: none;
-  border: none;
-  border-radius: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-}
-
-
 /* =============================================================================
   from callmenick
 ============================================================================= */
@@ -109,11 +86,6 @@ button {
 }
 
 
-
-
-.sidebar a {
-    color: #fff
-}
 .profile {
     font-size: 18px;
     font-size: 0.9rem;
@@ -142,37 +114,35 @@ button {
     margin-bottom: 0.75rem
 }
 
-.nav-subtext {
-  display: block;
-  font-weight: normal;
-  font-size: 12px;
-  padding-top: 3px;
-  color: #166888;
-}
-
-.nav-text {
-  font-size: 16px;
-  font-weight: normal;
-  display: block;
-}
-
-
-.sidebar-nav-items{
-  list-style: none outside;
-  padding: 0;
-}
 
 .sidebar-nav {
   text-align: center;
+   color: $sidebar-text-color;
+  border-bottom: 1px solid rgba(255,255,255,.1);
 }
-.nav-link {
-  color: #166888;
+.sidebar-nav-item {
+ color: #166888;
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
   text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
 }
 
-.nav-link:hover {
-    color: #fff;
-        text-decoration: none;
+@media (min-width: 48em) {
+  .sidebar-item {
+    padding: 1.5rem;
+  }
+  .sidebar-nav-item {
+    padding-left:  1.5rem;
+    padding-right: 1.5rem;
+  }
 }
+
 
 

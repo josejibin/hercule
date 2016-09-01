@@ -40,9 +40,6 @@ body {
     cursor: auto;
     margin: 0;
     padding: 0;
-    background: #e2e2e2;
-    color: #797167;
-    font-family: Helvetica-Light, Helvetica;
     font-size: .875em
 }
 
@@ -59,7 +56,6 @@ body {
 
 
 .navbar,
-.navbar__trigger:hover,
 .off-canvas,
 select:focus {
     background: #4099FF;
@@ -111,12 +107,6 @@ select:focus {
     border-bottom: 1px solid #e2e2e2
 }
 .navbar__trigger {
-    background: #4099FF;
-    color: #d25134;
-    float: right;
-    height: 65px;
-    padding: 0;
-    width: 70px
 }
 @media (min-width: 63.5em) {
     .no-boxshadow .navbar {
@@ -124,10 +114,6 @@ select:focus {
         border-right: 1px solid #e2e2e2
     }
     .navbar__trigger {
-        border-top: 1px solid #e2e2e2;
-        border-bottom: 1px solid #e2e2e2;
-        height: 80px;
-        width: 100%
     }
 
 }
