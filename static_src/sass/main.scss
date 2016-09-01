@@ -9,16 +9,29 @@
 
 // 3. Base stuff
 @import
+  'base/reset',
   'base/base',
   'base/typography';
 
 // 4. Layout-related sections
 @import
   'layout/grid',
-  'layout/sidebar';
+  'layout/sidebar',
+  'layout/header',
+  'layout/footer',
+  'layout/post',
+  'layout/pagination';
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/blockquote',
+  'components/code',
+  'components/headings',
+  'components/icons',
+  'components/images',
+  'components/lists',
+  'components/misc',
+  'components/table';
 
 // 6. Page-specific styles
