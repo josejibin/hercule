@@ -11,9 +11,6 @@ html {
 }
 
 
-
-
-
 body {
     position: relative
 }
@@ -26,22 +23,7 @@ body {
     }
 }
 
-body,
-html {
-    height: 100%;
-    font-size: 100%
-}
-*,
-:after,
-:before {
-    box-sizing: inherit
-}
-body {
-    cursor: auto;
-    margin: 0;
-    padding: 0;
-    font-size: .875em
-}
+
 
 
 .navbar,
