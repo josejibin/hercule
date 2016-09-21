@@ -1,0 +1,18 @@
+{{ $baseurl := .Site.BaseURL }}
+<article>
+    <p class="meta date">
+      <strong>{{ .Date.Format "2 Jan" }}</strong>
+      {{ .Date.Format "2016" }}
+    </p>
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <p>Here must come a sample data and read more button</p>
+    <span class="taglist">
+        {{if .Params.tags }}
+        &middot;
+        {{ range $index, $tag := .Params.tags }}
+            <a href="{{ $baseurl }}tags/{{ $tag | urlize }}/">{{ $tag }}</a>
+        {{ end }}
+        {{ end }}
+        </span>
+  </article>
+
