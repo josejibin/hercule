@@ -3,7 +3,13 @@
 
 {{ partial "sidebar.html" . }}
 
-</div>
+<main id="content">
+{{ $paginator := .Paginator }}
+
+    {{ range $index, $page := .Paginator.Pages }}
+        {{ .Render "li" }}
+    {{ end }}
+
+      {{ partial "pagination.html" $paginator }}
+    </main>
 {{ partial "footer.html" . }}
-  </body>
-</html>

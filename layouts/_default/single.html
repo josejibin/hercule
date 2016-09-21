@@ -1,0 +1,33 @@
+{{ $baseurl := .Site.BaseURL }}
+{{ partial "head.html" . }}
+{{ partial "sidebar.html" . }}
+
+<div class="container content">
+  <div class="post">
+
+  <h1 class="post-title">
+      <a href="/2014/01/02/introducing-lanyon/">
+        {{ .Title }}
+      </a>
+    </h1>
+
+        <span class="post-date">{{ .Date.Format "2 Jan 2006" }}</span>
+
+
+        <span class="taglist">
+        {{if .Params.tags }}
+        &middot;
+        {{ range $index, $tag := .Params.tags }}
+            <a href="{{ $baseurl }}tags/{{ $tag | urlize }}/">{{ $tag }}</a>
+        {{ end }}
+        {{ end }}
+        </span>
+
+
+    {{ .Content }}
+
+</article>
+
+</div>
+</div>
+{{ partial "footer.html" . }}
