@@ -1,9 +1,15 @@
 /* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #313131;
+  letter-spacing: -.025rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: bold;
   line-height: 1.25;
-  color: #313131;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -20,11 +26,4 @@ h3 {
 h4, h5, h6 {
   margin-top: 1rem;
   font-size: 1rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #313131;
-  letter-spacing: -.025rem;
 }

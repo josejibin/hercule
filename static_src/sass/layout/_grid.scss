@@ -1,116 +1,41 @@
-.navbar,
-{
-    border-bottom: 1px solid #e2e2e2
+
+/*
+ * Wrapper
+ *
+ * The wrapper is used to position site content when the sidebar is toggled. We
+ * use an outter wrap to position the sidebar without interferring with the
+ * regular page content.
+ */
+
+.wrap {
+  position: relative;
+  width: 100%;
 }
-@media (min-width: 43.75em) {
-    body:after {
-        content: 'fixed-post-sidebar';
-        display: none
-    }
+
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container {
+  max-width: 28rem;
 }
-.navbar,
-.off-canvas {
-    left: 0;
-    position: fixed
+@media (min-width: 38em) {
+  .container {
+    max-width: 32rem;
+  }
 }
-.page {
-    background: #fff;
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+  }
 }
-.navbar,
-.off-canvas,
-select:focus {
-    background: #4099FF;
-}
-select:focus {
-    outline: #797167 solid 1px
-}
-.page {
-    min-height: 100%;
-    z-index: 1
-}
-@media (min-width: 0)and (max-width: 63.5em) {
-    .page {
-        padding-top: 65px
-    }
-}
-@media (min-width: 63.5em) {
-    body {
-        padding-left: 80px
-    }
-    .page {
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
-        max-width: 1620px
-    }
-}
-.navbar {
-    height: 68px;
-    right: 0;
-    top: 0;
-    -webkit-transition: width .5s ease;
-    transition: width .5s ease;
-    width: 100%;
-    z-index: 101
-}
-@media (min-width: 63.5em) {
-    .navbar {
-        border-bottom: none;
-        height: 100%;
-        right: auto;
-        width: 80px
-    }
-    .navbar--is-open .navbar {
-        width: 320px
-    }
-}
-.no-boxshadow .navbar {
-    border-bottom: 1px solid #e2e2e2
-}
-.navbar__trigger {} @media (min-width: 63.5em) {
-    .no-boxshadow .navbar {
-        border-bottom: none;
-        border-right: 1px solid #e2e2e2
-    }
-    .navbar__trigger {}
-}
-.off-canvas {
-    height: 100%;
-    top: 68px;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-    width: 100%;
-    z-index: 1;
-    overflow-y: auto
-}
-@media (min-width: 63.5em) {
-    .off-canvas {
-        padding: 0 0 50px;
-        position: relative;
-        top: 0;
-        -webkit-transform: translateX(-320px);
-        -ms-transform: translateX(-320px);
-        transform: translateX(-320px);
-        -webkit-transition: none;
-        transition: none;
-        width: 320px;
-        z-index: 10
-    }
-}
-.navbar--is-open .off-canvas {
-    left: 0;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease
-}
-.no-csstransforms .off-canvas {
-    left: -100%
-}
-@media (min-width: 63.5em) {
-    .no-csstransforms .off-canvas {
-        left: -320px
-    }
-}
+
+
+
+
+
+
+
