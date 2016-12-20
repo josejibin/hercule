@@ -1,15 +1,8 @@
-{{ partial "head.html" . }}
-<body class="bodyy navbar--is-closed">
+{{ partial "header.html" . }}
+<body class="{{ .Site.Params.themeColor }}">
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+  {{ partial "sidebar.html" . }}
 
-{{ partial "sidebar.html" . }}
-
-<main id="content">
-{{ $paginator := .Paginator }}
-
-    {{ range $index, $page := .Paginator.Pages }}
-        {{ .Render "li" }}
-    {{ end }}
-
-      {{ partial "pagination.html" $paginator }}
-    </main>
-{{ partial "footer.html" . }}
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    </body>
+  </html>
