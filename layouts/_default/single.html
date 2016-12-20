@@ -1,34 +1,25 @@
-{{ $baseurl := .Site.BaseURL }}
-{{ partial "head.html" . }}
-{{ partial "sidebar.html" . }}
-
-<div class="container content">
-{{ partial "masthead.html" }}
-  <div class="post">
-
-  <h1 class="post-title">
-      <a href="/2014/01/02/introducing-lanyon/">
-        {{ .Title }}
-      </a>
-    </h1>
-
-        <span class="post-date">{{ .Date.Format "2 Jan 2006" }}</span>
-
-
-        <span class="taglist">
-        {{if .Params.tags }}
-        &middot;
-        {{ range $index, $tag := .Params.tags }}
-            <a href="{{ $baseurl }}tags/{{ $tag | urlize }}/">{{ $tag }}</a>
-        {{ end }}
-        {{ end }}
-        </span>
-
-
-    {{ .Content }}
-
-</article>
-
-</div>
-</div>
-{{ partial "footer.html" . }}
+{{ partial "header.html" . }}
+<body class="{{ .Site.Params.themeColor }}">
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+  {{ partial "sidebar.html" . }}
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+  content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+        <a href="/" title="Home">Jibin Jose</a>
+        <small>personal notes</small>
+        </h3>
+      </div>
+    </div>
+    <div class="container content">
+      <div class="page">
+        <h1 class="page-title">{{ .Title }}</h1>
+        {{ .Content }}
+      </div>
+    </div>
+    </div>
+      <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    </body>
+  </html>
