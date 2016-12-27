@@ -1,8 +1,19 @@
 {{ partial "header.html" . }}
 <body class="{{ .Site.Params.themeColor }}">
-  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-  {{ partial "sidebar.html" . }}
-
-<label for="sidebar-checkbox" class="sidebar-toggle"></label>
-    </body>
-  </html>
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+    {{ partial "sidebar.html" . }}
+    <div id="wrap" class="wrap">
+        {{ partial "masthead.html" . }}
+        <div class="container">
+            <div class="">
+                <h1>
+                Hai, I’m Jibin Jose.
+                </h1>
+                <p>
+                    I am a mediocre programmer from India who trying to continuously improve as a developer. Learning python and golang
+                </p>
+                {{ partial "social.html" . }}
+            </div>
+            <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+        </body>
+    </html>
