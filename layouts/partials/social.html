@@ -1,20 +1,38 @@
-<div class="social-links">
+<nav class="social-links">
   {{ with .Site.Params.social.twitter }}
-      <a href="https://twitter.com/{{.}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a href="{{.}}" target="_blank">
+    <i class="fa-icon fa-twitter"></i>
+    Twitter
+  </a>
   {{ end }}
   {{ with .Site.Params.social.google }}
-      <a href="https://plus.google.com/{{.}}/about"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+  <a href="{{.}}" target="_blank">
+    <i class="fa-icon fa-twitter"></i>
+    Google
+  </a>
   {{ end }}
   {{ with .Site.Params.social.facebook }}
-      <a href="https://facebook.com/{{.}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  <a href="{{.}}" target="_blank">
+    <i class="fa-icon fa-twitter"></i>
+    Facebook
+  </a>
   {{ end }}
   {{ with .Site.Params.social.github }}
-      <a href="https://github.com/{{.}}"><i class="fa fa-github" aria-hidden="true"></i></a>
+  <a href="{{.}}" target="_blank">
+    <i class="fa-icon fa-twitter"></i>
+    Github
+  </a>
   {{ end }}
   {{ with .Site.Params.social.linkedIn }}
-      <a href="https://linkedin.com/in/{{.}}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  <a href="{{.}}" target="_blank">
+    <i class="fa-icon fa-twitter"></i>
+    Linkedin
+  </a>
   {{ end }}
   {{ with .Site.Params.social.email }}
-      <a href="mailto:{{.}}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  <a href="mailto:{{.}}" target="_blank">
+    <i class="fa-icon fa-email"></i>
+    Contact
+  </a>
   {{ end }}
-</div>
+</nav>
