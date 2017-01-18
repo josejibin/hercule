@@ -1,0 +1,22 @@
+.fa-icon {
+  display: block;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-size: 1.1rem;
+  line-height: 1; }
+  @media screen and (min-width: 900px) {
+    .fa-icon {
+      font-size: 1rem; } }
+
+
+.fa-twitter:before {
+  content: "\f099"; }
+
+.fa-linkedin:before {
+  content: "\f0e1"; }
+
+.fa-github:before {
+  content: "\f09b"; }
+
+.fa-email:before {
+  content: "\f003"; }
