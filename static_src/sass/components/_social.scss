@@ -1,0 +1,32 @@
+.social-links {
+    display: block;
+    font-size: 0.5rem;
+    margin-left: -3px;
+}
+.social-links > a {
+    background: none;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #bbbbbb;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px;
+    &:hover {
+        color: #0088cc;
+    }
+}
+.social-links > a > span {
+    line-height: 1;
+    opacity: 0;
+    padding: 0.4rem 0;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    transition: 0.1s;
+    white-space: nowrap;
+}
+.social-links > a:hover > span {
+    color: #0088cc;
+    opacity: 1;
+    pointer-events: auto;
+}
