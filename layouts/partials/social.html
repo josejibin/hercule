@@ -1,6 +1,6 @@
 <nav class="social-links">
   {{ with .Site.Params.social.twitter }}
-  <a href="{{.}}" target="_blank">
+  <a href="{{.}}" target="_blank" title="tweet me">
     <i class="fa-icon fa-twitter"></i>
     <span>Twitter
   </a>
@@ -18,19 +18,19 @@
   </a>
   {{ end }}
   {{ with .Site.Params.social.github }}
-  <a href="{{.}}" target="_blank">
+  <a href="{{.}}" target="_blank" title="My github profile">
     <i class="fa-icon fa-github"></i>
     <span>Github</span>
   </a>
   {{ end }}
   {{ with .Site.Params.social.linkedIn }}
-  <a href="{{.}}" target="_blank">
+  <a href="{{.}}" target="_blank" title="My LinkedIn profile">
     <i class="fa-icon fa-linkedin"></i>
     <span>Linkedin</span>
   </a>
   {{ end }}
   {{ with .Site.Params.social.email }}
-  <a href="mailto:{{.}}" target="_blank">
+  <a href="mailto:{{.}}" target="_blank" title="Send me an email">
     <i class="fa-icon fa-email"></i>
     <span>Contact</span>
   </a>
